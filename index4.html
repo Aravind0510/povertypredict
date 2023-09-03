@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+ 
+</head>
+<body>
+  <h1>
+    Fill the form given below
+  </h1>
+  <div class="container">
+    <form action="{{url_for('predict')}}"method="post">
+      <input type="text" style="width: 250px;" name="Age" placeholder="Enter your age" required> <br><br>
+      <input type="text" style="width: 250px;" name="Education Level" placeholder=" Enter education level(0/1) " required> <br><br>
+      <input type="text" style="width: 250px;" name="Phn ownership 1" placeholder="Phn ownership 1" required> <br><br>
+      <input type="text" style="width: 250px;" name="Female " placeholder=" are you female (enter your answer (0/1))" required> <br><br>
+      <input type="text" style="width: 250px;" name="Married" placeholder="are you Married (enter your answer (0/1))" required> <br><br>
+      <input type="text" style="width: 250px;" name="Literacy" placeholder=" are you literacy(enter answer in (0/1)) " required> <br><br>
+      <input type="text" style="width: 250px;" name="Employed" placeholder="are you Employed last year" required> <br><br>
+      <input type="text" style="width: 350px;" name="Employment type" placeholder="Employment type" required>
+       <br><br>
+       <input type="text" style="width: 250px;" name="income_own_business" placeholder="Income own business" required> <br><br>
+      <input type="text" style="width: 250px;" name="income_private_sector" placeholder="Income private sector" required> <br><br>
+      <input type="text" style="width: 250px;" name="income_public_sector" placeholder="Income public sector" required> <br><br>
+      <input type="text" style="width: 250px;" name="savings" placeholder="savings" required> <br><br>
+      <input type="text" style="width: 250px;" name="Investment" placeholder="Investment" required> <br><br>
+      <input type="text" style="width: 250px;" name="Transaction" placeholder="Transaction" required> <br><br>
+      <input type="text" style="width: 350px;" name="Finance included" placeholder="Finance included" required>
+       <br><br>
+       <input type="text" style="width: 250px;" name="Active bank user" placeholder="Active bank user" required> <br><br>
+      
+      
+      
+      <button type="submit" class="btn">Predict</button>
+    </form>
+
+    <br>
+    <br>
+    {{ prediction_text }}
+  </div>
+</body>
+</html>
